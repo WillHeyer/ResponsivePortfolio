@@ -1,135 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>WillHeyer</title>
-        <link rel="stylesheet" href="assets/css/style.css">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-            integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-            crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-            integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-            crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
-            integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-            crossorigin="anonymous"></script>
-    </head>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Will Heyer's Portfolio</title>
+  <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css'
+    integrity='sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2' crossorigin='anonymous'>
+  <script src='https://code.jquery.com/jquery-3.5.1.slim.min.js'
+    integrity='sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj'
+    crossorigin='anonymous'></script>
+  <script src='https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js'
+    integrity='sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx'
+    crossorigin='anonymous'></script>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="index.html">WillHeyer</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
-            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
-                <a class="nav-item nav-link" href="./Portfolio.html">Portfolio</a>
-                <a class="nav-item nav-link" href="./Contact.html">Contact</a>
+  <!-- Same navbar from index.html-->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Will Heyer</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+      aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-left" id="navbarNavAltMarkup">
+      <div class="navbar-nav justify-content-left">
+        <a class="nav-link" href="index.html">About</a>
+        <a class="nav-link active" href="portfolio.html">Portfolio<span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="contact.html">Contact</a>
+      </div>
+    </div>
+  </nav>
+  <br> <br>
+  <!-- I used another card to display the portfolio images -->
+  <main class="about-me-card" style="max-width: 450px;">
+    <div class="row g-0">
+      <div class="col-lg-10 col-md-10 col-sm-12">
+        <h2 Class="card-title"> Portfolio</h2>
+        <br>
+        <div class="container">
+          <div class="row">
+            <h4> <a href="https://ancient-taiga-01581.herokuapp.com/" target="_blank">Note Taking App</a></h4>
+            <h6> View the repository <a href="https://github.com/WillHeyer/NoteTaker" target="_blank">here.</a></h6>
+            <div class="col-lg-12">
+              <img class="img img-thumbnail" alt="Note taking App" src="./Assets/Note Taker.png">
             </div>
-        </div>
-    </nav>
-    <div class="container">
-        <div class="row">
-            <div class="col-sm">
-                <div class="card demo-cards mx-auto" style="width: 60rem;">
-                    <img class="card-img-top" src="./Assets/images/Drumkit.png" alt="Card image cap">
-                    <div class="card-body">
-                      <h5 class="card-title">JQuery Drumkit Project</h5>
-                      <p class="card-text">For this project our group used the following: JavaScript/JQuery for handing the logic, the Bulma framework to stylize the page, and basic HTML for the page layout.</p>
-                    </div>
-                    <div class="card-body">
-                      <a href="https://willheyer.github.io/DrumKitProject/"  target="_blank" class="card-link">Live Page</a>
-                      <a href="https://github.com/WillHeyer/DrumKitProject" target="_blank" class="card-link">Repository Page</a>
-                    </div>
-                </div>
+          </div>
+          <br>
+          <div class="row">
+            <h4> <a href="https://willheyer.github.io/Weather-Dashboard/" target="_blank">Weather Dashboard</a></h4>
+            <h6> View the repository <a href="https://github.com/WillHeyer/Weather-Dashboard" target="_blank">here.</a></h6>
+            <div class="col-lg-12">
+              <img class="img img-thumbnail" alt="Weather near you!" src="./Assets/Weather Dash.png">
             </div>
+          </div>
+         <br>
+          <div class="row">
+            <h4> <a href="https://infinite-savannah-89804.herokuapp.com/" target="_blank">See Something Say Something</a></h4>
+            <h6> View the repository <a href="https://github.com/mesgt/charmeleon" target="_blank">here.</a></h6>
+            <div class="col-lg-12">
+              <img class="img img-thumbnail" alt="A screenshot of an app that helps users stay safe" src="./Assets/SeeSomething.png">
+            </div>
+          </div>
+          <br>
+          <div class="row">
+            <h4> <a href="https://willheyer.github.io/Dayplanner/" target="_blank">Day Scheduler</a></h4>
+            <h6> View the repository <a href="https://github.com/WillHeyer/Dayplanner" target="_blank">here.</a></h6>
+            <div class="col-lg-12">
+              <img class="img img-thumbnail" alt="A screenshot of an app that helps plan your day" src="./Assets/DayPlanner.png">
+            </div>
+          </div>
         </div>
     </div>
-    <div class="container">
-        <div class="row">
-            <div class="col-sm">
-                <div class="card demo-cards mx-auto" style="width: 60rem;">
-                    <img class="card-img-top" src="./Assets/images/PasswordGenerator.png" alt="Card image cap">
-                    <div class="card-body">
-                      <h5 class="card-title">Random Password Generator</h5>
-                      <p class="card-text">The main technology used in this assignment was vanilla JavaScript with a style.css sheet.</p>
-                    </div>
-                    <div class="card-body">
-                      <a href="https://willheyer.github.io/Javascript-Password-Generator/" target="_blank" class="card-link">Live Page</a>
-                      <a href="https://github.com/WillHeyer/Javascript-Password-Generator" target="_blank" class="card-link">Repository Page</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="container">
-        <div class="row">
-            <div class="col-sm">
-                <div class="card demo-cards mx-auto" style="width: 60rem;">
-                    <img class="card-img-top" src="./Assets/images/WeatherDashboard.png alt="Card image cap">
-                    <div class="card-body">
-                      <h5 class="card-title">Weather Dashboard</h5>
-                      <p class="card-text">The main technology used in the assignment was JavaScript/JQuery for the logic and BootStrap for the styling of the page. We also utilzed the local storage to save recent searches in your browser to be displayed after refreshing the page.</p>
-                    </div>
-                    <div class="card-body">
-                      <a href="https://willheyer.github.io/Weather-Dashboard/ " target="_blank" class="card-link">Live Page</a>
-                      <a href="https://github.com/WillHeyer/Weather-Dashboard" target="_blank" class="card-link">Repository Page</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="container">
-        <div class="row">
-            <div class="col-sm">
-                <div class="card demo-cards mx-auto" style="width: 60rem;">
-                    <img class="card-img-top" src="./Assets/images/CrimeAde.png" alt="Card image cap">
-                    <div class="card-body">
-                      <h5 class="card-title">See Something Say Something</h5>
-                      <p class="card-text">The main technology used in the assignment was JavaScript/JQuery for the logic and CSS for the styling of the page. We also utilzed Heroku and Handlebars.</p>
-                    </div>
-                    <div class="card-body">
-                      <a href="https://github.com/mesgt/charmeleon" target="_blank" class="card-link">Repository Page</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="container">
-        <div class="row">
-            <div class="col-sm">
-                <div class="card demo-cards mx-auto" style="width: 60rem;">
-                    <img class="card-img-top" src="./Assets/images/BurgerPreview.png" alt="Card image cap">
-                    <div class="card-body">
-                      <h5 class="card-title">Burger App</h5>
-                      <p class="card-text">The main technology used in the assignment was JavaScript/JQuery for the logic and CSS for the styling of the page. I also utilzed Heroku and Handlebars.</p>
-                    </div>
-                    <div class="card-body">
-                      <a href="https://github.com/mesgt/charmeleon" target="_blank" class="card-link">Repository Page</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="container">
-        <div class="row">
-            <div class="col-sm">
-                <div class="card demo-cards mx-auto" style="width: 60rem;">
-                    <img class="card-img-top" src="./Assets/images/WorkDayScheduler.png" alt="Card image cap">
-                    <div class="card-body">
-                      <h5 class="card-title">Day Scheduler</h5>
-                      <p class="card-text">The main technology used in the assignment was JavaScript/JQuery for the logic and CSS for the styling of the page.</p>
-                    </div>
-                    <div class="card-body">
-                        <a href="https://willheyer.github.io/Dayplanner/" target="_blank" class="card-link">Live Page</a>
-                        <a href="https://github.com/WillHeyer/Dayplanner" class="card-link">Repository Page</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</body>
+  </div>
+  </main>
 </html>
